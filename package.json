@@ -21,22 +21,8 @@
     "build": "next build",
     "start": "next start",
     "build:static": "next build && next out",
-    "test": "eslint ./ --ext js,jsx,ts,tsx"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{html,js,json,md,mdx,mjs,yml}": [
-      "npx prettier --write",
-      "git add"
-    ],
-    ".{png, jpg, jpeg}": [
-      "npx @squoosh/cli --wp2 auto",
-      "git add"
-    ]
+    "lint": "eslint . --ext .js --ext .ts --ext .tsx",
+    "test": "yarn lint"
   },
   "prettier": {
     "arrowParens": "avoid",
@@ -55,8 +41,8 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^4.27.0",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
     "eslint": "^7.12.1",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.22.1",
