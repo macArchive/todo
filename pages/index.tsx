@@ -1,3 +1,5 @@
+import {Button, useColorMode, useColorModeValue} from "@chakra-ui/react"
 export default function Home() {
-  return <h1>Welcome to Mastering Next.js</h1>
+  const {colorMode, toggleColorMode} = useColorMode()
+  return <h1>Welcome to next</h1>
 }
