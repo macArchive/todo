@@ -6,7 +6,7 @@ export default function Logo() {
   return (
     <>
       <Img src='/logo.svg' alt='Todo Logo Image' boxSize={60} />
-      <Heading size='md'>{siteTitle}</Heading>
+      <Heading as='h1' size='md'>{siteTitle}</Heading>
     </>
   )
 }
