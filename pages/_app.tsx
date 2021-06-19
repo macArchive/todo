@@ -6,6 +6,8 @@ import {
 } from "@chakra-ui/react"
 import {theme} from "@/styles/theme"
 
+export const siteTitle = "Todo"
+
 export default function MyApp({Component, pageProps, cookies}: AppProps) {
   const colorModeManager =
     typeof cookies === "string"
