@@ -1,4 +1,5 @@
 import {default as NextHead} from "next/head"
+import {siteTitle} from "../../pages/_app"
 
 interface HeadProps {
   pageTitle: string
@@ -25,7 +26,6 @@ const Head: FC<HeadProps> = ({
   siteUrl,
   themeColor
 }) => {
-  const siteTitle = "Site Title"
   return (
     <NextHead>
       <meta charSet='UTF-8'></meta>
