@@ -1,0 +1,68 @@
+{
+  "name": "start",
+  "version": "0.1.0",
+  "description": "A starter application to hit the ground running with.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machooper/start"
+  },
+  "keywords": [
+    "next",
+    "typescript",
+    "react"
+  ],
+  "author": {
+    "name": "Mac",
+    "email": "mac.develops@icloud.com",
+    "url": "https://machooper.tech"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "build:static": "next build && next out",
+    "test": "eslint ./ --ext js,jsx,ts,tsx"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{html,js,json,md,mdx,mjs,yml}": [
+      "npx prettier --write",
+      "git add"
+    ],
+    ".{png, jpg, jpeg}": [
+      "npx @squoosh/cli --wp2 auto",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": false,
+    "embeddedLanguageFormatting": "off",
+    "htmlWhitespaceSensitivity": "strict",
+    "jsxBracketSameLine": true,
+    "jsxSingleQuote": true,
+    "quoteProps": "consistent",
+    "semi": false,
+    "trailingComma": "none"
+  },
+  "dependencies": {
+    "next": "^11.0.1-canary.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^4.27.0",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^6.0.0"
+  }
+}
