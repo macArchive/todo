@@ -22,7 +22,7 @@
     "start": "next start",
     "build:static": "next build && next out",
     "lint": "eslint . --ext .js --ext .ts --ext .tsx",
-    "test": "yarn lint"
+    "test": "jest"
   },
   "prettier": {
     "arrowParens": "avoid",
@@ -41,6 +41,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
     "eslint": "^7.12.1",
@@ -49,6 +50,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.24.0",
-    "husky": "^6.0.0"
+    "husky": "^6.0.0",
+    "jest": "^27.0.4"
   }
 }
