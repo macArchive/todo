@@ -7,7 +7,7 @@ interface ContentProps {
 
 const Content: FC<ContentProps> = ({children}) => {
   return (
-    <Stack minH='100vh' direction='column' align='center'>
+    <Stack as='main' minH='100vh' direction='column' align='center'>
       <Stack
         maxW={{sm: "auto", md: 960, xl: "80vw"}}
         direction='column'
