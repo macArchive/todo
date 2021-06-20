@@ -33,6 +33,12 @@ export const theme = extendTheme({
       900: "#1A1A1A"
     }
   },
+  icons: {
+   logo: {
+     path: {},
+     viewBox: {}
+   }
+  }
   styles: {
     global: {
       body: {
