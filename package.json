@@ -23,18 +23,7 @@
     "build:static": "next build && next out",
     "start": "next start",
     "test": "next lint"
-  },
-  "prettier": {
-    "arrowParens": "avoid",
-    "bracketSpacing": false,
-    "embeddedLanguageFormatting": "off",
-    "htmlWhitespaceSensitivity": "strict",
-    "jsxBracketSameLine": true,
-    "jsxSingleQuote": true,
-    "quoteProps": "consistent",
-    "semi": false,
-    "trailingComma": "none"
-  },
+  }, 
   "dependencies": {
     "next": "^11.0.1-canary.5",
     "react": "^17.0.2",
