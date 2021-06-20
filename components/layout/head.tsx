@@ -14,7 +14,7 @@ interface HeadProps {
   themeColor: string
 }
 
-const Head: FC<HeadProps> = ({
+export default function Head({
   pageTitle,
   pageDescription,
   socialImage,
@@ -25,7 +25,7 @@ const Head: FC<HeadProps> = ({
   siteType,
   siteUrl,
   themeColor
-}) => {
+}: <HeadProps>) => {
   return (
     <NextHead>
       <meta charSet='UTF-8'></meta>
