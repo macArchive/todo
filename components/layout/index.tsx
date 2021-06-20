@@ -6,8 +6,9 @@ import Footer from "./footer"
 interface LayoutProps {
   title: string
   description: string
+  children: any
 }
-export default function Layout({title, description, children}) {
+export default function Layout({title, description, children}: <LayoutProps>) {
   return (
     <>
       <Head
