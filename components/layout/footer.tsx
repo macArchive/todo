@@ -4,7 +4,7 @@ import {Stack} from "@chakra-ui/layout"
 
 export default function Footer() {
   return (
-    <Stack direction='column'>
+    <Stack as='footer' direction='column'>
       <Stack
         w='100vw'
         direction='row'
