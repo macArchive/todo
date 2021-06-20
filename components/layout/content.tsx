@@ -5,7 +5,7 @@ interface ContentProps {
   children: any
 }
 
-const Content: FC<ContentProps> = ({children}) => {
+export default function Content({children}: <ContentProps>){
   return (
     <Stack as='main' minH='100vh' direction='column' align='center'>
       <Stack
