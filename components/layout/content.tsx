@@ -1,4 +1,3 @@
-import {FC} from "react"
 import {Stack} from "@chakra-ui/react"
 
 interface ContentProps {
