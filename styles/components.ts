@@ -1,8 +1,4 @@
 export const Button = {
-  fonts: {
-    heading: "'system-ui', sans-serif",
-    body: "'system-ui', sans-serif"
-  },
   baseStyle: {
     fontWeight: "bold",
     textTransform: "uppercase",
