@@ -8,7 +8,7 @@ import {theme} from "@/styles/theme"
 
 export const siteTitle = "Todo"
 
-export default function MyApp({Component, pageProps, cookies}: AppProps) {
+export default function MyApp({Component, pageProps, cookies}) {
   const colorModeManager =
     typeof cookies === "string"
       ? cookieStorageManager(cookies)
