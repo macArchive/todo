@@ -18,3 +18,14 @@ export const Button = {
     }
   }
 }
+
+export const Input = {
+  baseStyle: {
+    errorBorderColor: "red.500",
+    focusBorderColor: "primary.500",
+    bg: "grey.200",
+    _placeholder: {
+      color: "red.600"
+    }
+  }
+}
