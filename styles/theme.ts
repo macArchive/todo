@@ -1,5 +1,5 @@
 import {extendTheme} from "@chakra-ui/react"
-import {Button} from "./components"
+import {Button, Input} from "./components"
 
 const config: ThemeConfig = {
   initialColorMode: "light",
@@ -55,7 +55,8 @@ export const theme = extendTheme({
     }
   },
   components: {
-    Button
+    Button,
+    Input
   },
   config
 })
