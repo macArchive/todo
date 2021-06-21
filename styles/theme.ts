@@ -1,4 +1,4 @@
-import {extendTheme} from "@chakra-ui/react"
+import {extendTheme, ThemeConfig} from "@chakra-ui/react"
 import {Button, Input} from "./components"
 
 const config: ThemeConfig = {
