@@ -46,10 +46,11 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: 'white.200',
-        color: 'gray.800',
         maxW: '100vw',
-        overflowX: 'hidden'
+        overflowX: 'hidden',
+        fontFamily: "body",
+        color: mode("gray.800", "whiteAlpha.900")(props),
+        bg: mode("white", "gray.800")(props)
       },
       a: {
         color: 'teal.500',
