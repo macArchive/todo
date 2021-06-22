@@ -1,19 +1,20 @@
-import Head from "./head"
-import Header from "./header"
-import Content from "./content"
-import Footer from "./footer"
+import Head from './head'
+import Header from './header'
+import Content from './content'
+import Footer from './footer'
 
 interface LayoutProps {
   title: string
   description: string
   children: any
 }
-export default function Layout({title, description, children}: <LayoutProps>) {
+
+export default function Layout({title, description, children}: LayoutProps) {
   return (
     <>
       <Head
-        pageTitle={title}
-        pageDescription={description}
+        pageTitle={props.title}
+        pageDescription={props.description}
         socialImage='ph'
         socialImageText='ph'
         siteIcon='ph'

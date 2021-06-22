@@ -1,5 +1,5 @@
-import {default as NextHead} from "next/head"
-import {siteTitle} from "../../pages/_app"
+import {default as NextHead} from 'next/head'
+import {siteTitle} from '../../pages/_app'
 
 interface HeadProps {
   pageTitle: string
@@ -9,12 +9,12 @@ interface HeadProps {
   siteIcon: string
   touchIcon: string
   siteLocale: string
-  siteType: "website" | "app"
+  siteType: 'website' | 'app'
   siteUrl: string
   themeColor: string
 }
 
-export default function Head({
+export default function Layout({
   pageTitle,
   pageDescription,
   socialImage,
@@ -25,7 +25,7 @@ export default function Head({
   siteType,
   siteUrl,
   themeColor
-}: <HeadProps>) => {
+}: HeadProps) {
   return (
     <NextHead>
       <meta charSet='UTF-8'></meta>
@@ -36,7 +36,7 @@ export default function Head({
         {siteTitle} | {pageTitle}
       </title>
       <meta name='description' content={pageDescription}></meta>
-      <meta property='og:title' content={`${siteTitle} | ${pageTitle}`}></meta>
+      <meta property='og:title' content={`${pageTitle} | ${siteTitle}`}></meta>
       <meta property='og:description' content={pageDescription}></meta>
       <meta property='og:image' content={socialImage}></meta>
       <meta property='og:image:alt' content={socialImageText}></meta>
@@ -51,5 +51,3 @@ export default function Head({
     </NextHead>
   )
 }
-
-export default Head
