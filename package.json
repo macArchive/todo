@@ -26,6 +26,7 @@
     "test": "npx prettier --write * && eslint lint . --ext .ts --ext .tsx --ext .json"
   },
   "dependencies": {
+    "graphql": "^15.5.1,
     "graphql-request": "^3.4.0",
     "next": "^11.0.1-canary.5",
     "react": "^17.0.2",
