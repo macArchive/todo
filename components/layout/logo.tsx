@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {HStack, Icon, Heading} from "@chakra-ui/core"
+import {HStack, Icon, Heading} from "@chakra-ui/react"
 import {siteTitle} from "pages/_app"
 
 export default function Logo() {

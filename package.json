@@ -23,7 +23,7 @@
     "build": "next build",
     "build:static": "next build && next out",
     "start": "next start",
-    "test": "eslint lint . --ext .ts --ext .tsx --ext .json"
+    "test": "npx prettier --write * && eslint lint . --ext .ts --ext .tsx --ext .json"
   },
   "dependencies": {
     "next": "^11.0.1-canary.5",
@@ -31,8 +31,9 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@chakra-ui/core": "^1.6.4",
-    "@emotion/core": "^11",
+    "@chakra-ui/react": "^1.6.4",
+    "@emotion/styled": "^11.3.0",
+    "@emotion/react": "^11.4.0",
     "@types/node": "^15.12.4",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",

@@ -1,5 +1,5 @@
-import {ButtonGroup, IconButton} from "@chakra-ui/core"
-import {Github} from "react-icons/fi"
+import {ButtonGroup, IconButton} from "@chakra-ui/react"
+import {FiGithub} from "react-icons/fi"
 
 export default function SocialIcons() {
   return (
@@ -8,7 +8,7 @@ export default function SocialIcons() {
         as='a'
         href='https://github.com/machooper'
         aria-label='Github'
-        icon={<Github size='20px' />}
+        icon={<FiGithub size='20px' />}
         variant='link'
       />
     </ButtonGroup>

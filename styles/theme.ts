@@ -1,4 +1,4 @@
-import {extendTheme, ThemeConfig} from "@chakra-ui/core"
+import {extendTheme, ThemeConfig} from "@chakra-ui/react"
 import {Button, Input} from "./components"
 
 const config: ThemeConfig = {
@@ -38,7 +38,7 @@ export const theme = extendTheme({
      path: {},
      viewBox: {}
    }
-  }
+  },
   styles: {
     global: {
       body: {

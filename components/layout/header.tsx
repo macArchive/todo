@@ -1,5 +1,5 @@
 import Logo from "./logo"
-import {HStack, ButtonGroup, Button} from "@chakra-ui/core"
+import {HStack, ButtonGroup, Button} from "@chakra-ui/react"
 
 export default function Header() {
   return (
