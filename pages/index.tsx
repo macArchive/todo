@@ -1,3 +1,11 @@
+import Layout from '@/layout/index'
+
 export default function Home() {
-  return <h1>Welcome to next</h1>;
+  return (
+    <Layout
+      title='Home'
+      description='A starter app to help you hit the ground running'>
+      <h1>Welcome</h1>
+    </Layout>
+  )
 }

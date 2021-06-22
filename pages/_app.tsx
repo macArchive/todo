@@ -10,7 +10,7 @@ interface MyAppProps extends AppProps {
   cookies?: any
 }
 
-export const siteTitle = 'Todo'
+export const siteTitle = 'Site'
 
 export default function MyApp({Component, pageProps, cookies}: MyAppProps) {
   const colorModeManager =

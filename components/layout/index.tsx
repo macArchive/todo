@@ -13,8 +13,8 @@ export default function Layout({title, description, children}: LayoutProps) {
   return (
     <>
       <Head
-        pageTitle={props.title}
-        pageDescription={props.description}
+        pageTitle={title}
+        pageDescription={description}
         socialImage='ph'
         socialImageText='ph'
         siteIcon='ph'
@@ -25,9 +25,7 @@ export default function Layout({title, description, children}: LayoutProps) {
         themeColor='#0099ff'
       />
       <Header />
-      <Content flexDirection='column' maxWidth={960}>
-        {children}
-      </Content>
+      <Content>{children}</Content>
       <Footer />
     </>
   )
