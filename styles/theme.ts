@@ -61,6 +61,7 @@ export const theme = extendTheme({
   components: {
     Button,
     Input,
+    Text
   },
   config,
 })
