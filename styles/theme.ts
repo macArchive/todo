@@ -48,6 +48,8 @@ export const theme = extendTheme({
       body: {
         bg: 'white.200',
         color: 'gray.800',
+        maxW: '100vw',
+        overflowX: 'hidden'
       },
       a: {
         color: 'teal.500',
