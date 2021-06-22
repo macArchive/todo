@@ -1,4 +1,4 @@
-import {ButtonGroup, IconButton} from "@chakra-ui/button"
+import {ButtonGroup, IconButton} from "@chakra-ui/core"
 import {Github} from "react-icons/fi"
 
 export default function SocialIcons() {

@@ -3,7 +3,7 @@ import {
   ChakraProvider,
   cookieStorageManager,
   localStorageManager
-} from "@chakra-ui/react"
+} from "@chakra-ui/core"
 import {theme} from "@/styles/theme"
 
 export const siteTitle = "Todo"
