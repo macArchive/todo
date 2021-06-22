@@ -14,7 +14,7 @@ export default function Content({children}: <ContentProps>){
         grow={1}
         shrink={0}
         basis='auto'
-      />
+        >{children}</Stack>
     </Stack>
   )
 }
