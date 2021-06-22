@@ -25,3 +25,10 @@ export const Input = {
     }
   }
 }
+
+export const Text = {
+  baseStyle: {
+    w: "80vw",
+    textAlign: {base: "center", md: "left"}
+  }
+}
