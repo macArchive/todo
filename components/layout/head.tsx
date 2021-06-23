@@ -34,7 +34,7 @@ export default function Head({
         content="width=device-width, initial-scale=1"
       ></meta>
       <title>
-        {siteTitle} | {pageTitle}
+          {pageTitle} | {siteTitle}
       </title>
       <meta name="description" content={pageDescription}></meta>
       <meta property="og:title" content={`${pageTitle} | ${siteTitle}`}></meta>
