@@ -1,6 +1,6 @@
 {
   "name": "start",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A starter application to hit the ground running with.",
   "author": {
     "name": "Mac",
@@ -23,19 +23,20 @@
     "build": "next build",
     "build:static": "next build && next out",
     "start": "next start",
-    "test": "npx prettier --write * && eslint lint . --ext .ts --ext .tsx --ext .json"
+    "test": "eslint components/*/**.tsx library/*.ts pages/*/**.tsx pages/api/*.ts styles/*.ts --fix"
   },
   "dependencies": {
-    "graphql": "^15.5.1,
+    "graphql": "^15.5.1",
     "graphql-request": "^3.4.0",
     "next": "^11.0.1-canary.5",
+    "nodemailer": "^6.6.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "swr": "^0.5.6"
   },
   "devDependencies": {
-    "@chakra-ui/react": "^1.6.4",
     "@chakra-ui/icons": "^1.0.13",
+    "@chakra-ui/react": "^1.6.4",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@types/node": "^15.12.4",
@@ -43,13 +44,17 @@
     "@types/react-dom": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "eslint": "^7.12.1",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.24.0",
     "framer-motion": "^4",
     "husky": "^6.0.0",
+    "prettier": "^2.3.1",
     "react-icons": "^4.2.0",
     "typescript": "^4.3.4"
   }
