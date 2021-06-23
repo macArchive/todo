@@ -14,7 +14,7 @@ interface HeadProps {
   themeColor: string;
 }
 
-export default function Layout({
+export default function Head({
   pageTitle,
   pageDescription,
   socialImage,
