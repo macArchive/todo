@@ -6,7 +6,7 @@ import {
 import { theme } from '@/styles/theme'
 import '@fontsource/montserrat/400.css'
 
-export const siteTitle = 'Star Serpent'
+export const siteTitle = 'Site Title'
 
 export default function MyApp({ Component, pageProps, cookies }) {
   const colorModeManager =
