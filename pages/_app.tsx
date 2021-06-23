@@ -1,18 +1,14 @@
-import {AppProps} from 'next/app'
 import {
   ChakraProvider,
   cookieStorageManager,
-  localStorageManager
+  localStorageManager,
 } from '@chakra-ui/react'
-import {theme} from '@/styles/theme'
+import { theme } from '@/styles/theme'
+import '@fontsource/montserrat/400.css'
 
-interface MyAppProps extends AppProps {
-  cookies?: any
-}
+export const siteTitle = 'Star Serpent'
 
-export const siteTitle = 'Site'
-
-export default function MyApp({Component, pageProps, cookies}: MyAppProps) {
+export default function MyApp({ Component, pageProps, cookies }) {
   const colorModeManager =
     typeof cookies === 'string'
       ? cookieStorageManager(cookies)
@@ -25,10 +21,10 @@ export default function MyApp({Component, pageProps, cookies}: MyAppProps) {
   )
 }
 
-export async function getServerSideProps({req}) {
+export async function getServerSideProps({ req }) {
   return {
     props: {
-      cookies: req.headers.cookie ?? ''
-    }
+      cookies: req.headers.cookie ?? '',
+    },
   }
 }
