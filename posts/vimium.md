@@ -1,5 +1,5 @@
 ---
-title: "Possibly My Favourite Browser Extension..."
+title: "The Best Browser Extension..."
 topics: "Technology"
 coverImage: "/blog/vimum/cover.jpg"
 date: "19.05.21"

@@ -1,6 +1,7 @@
 import Layout from "@/layout/index";
 import { getAllPosts } from "@/lib/api";
-import { Heading, Text } from "@chakra-ui/react";
+import { Heading, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function Blog({ allPosts }) {
   console.log(allPosts);
@@ -14,6 +15,27 @@ export default function Blog({ allPosts }) {
         Here you can find a variety of posts covering Technology, Programming &
         Development, Music, Health and more.
       </Text>
+      {allPosts.map((post) => (
+        <Link href={`/blog/${post.slug}`} passHref>
+          <Stack
+            direction="row"
+            justify="space-around"
+            align="center"
+            w="85vw"
+            border="1px"
+            borderColor="gray.200"
+            shadow="md"
+            p=".5rem"
+          >
+            <Stack w="80%">
+              <Heading fontSize="20px">{post.title}</Heading>
+              <Text maxW="100%" isTruncated>
+                {post.excerpt}
+              </Text>
+            </Stack>
+          </Stack>
+        </Link>
+      ))}
     </Layout>
   );
 }
