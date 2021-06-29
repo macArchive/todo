@@ -1,13 +1,12 @@
 export const Button = {
   baseStyle: {
-    fontWeight: "bold",
-    textTransform: "uppercase",
     borderRadius: "base",
+    fontWeight: "400",
   },
   variants: {
     solid: {
-      bg: "primary.900",
-      color: "gray.50",
+      color: "white",
+      bg: "primary.500",
       _hover: {
         bg: "primary.700",
       },
@@ -25,7 +24,7 @@ export const Input = {
 
 export const Text = {
   baseStyle: {
-    w: "80vw",
-    textAlign: { base: "center", md: "left" },
+    w: { base: "85vw", md: "720px" },
+    textAlign: "left",
   },
 };
