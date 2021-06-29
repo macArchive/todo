@@ -29,7 +29,7 @@ export default function Blog({ allPosts }) {
           >
             <Stack w="80%">
               <Heading fontSize="20px">{post.title}</Heading>
-              <Text maxW="100%" isTruncated>
+              <Text maxW="100%" noOfLines={2}>
                 {post.excerpt}
               </Text>
             </Stack>
