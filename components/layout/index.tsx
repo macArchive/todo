@@ -1,7 +1,7 @@
-import Head from "./head";
-import Header from "./header";
 import Content from "./content";
 import Footer from "./footer";
+import Head from "./head";
+import Header from "./header";
 
 interface LayoutProps {
   title: string;

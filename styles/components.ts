@@ -14,14 +14,6 @@ export const Button = {
   },
 };
 
-export const Input = {
-  baseStyle: {
-    errorBorderColor: "red.500",
-    focusBorderColor: "primary.500",
-    bg: "grey.200",
-  },
-};
-
 export const Text = {
   baseStyle: {
     w: { base: "85vw", md: "720px" },
