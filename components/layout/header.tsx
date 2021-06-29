@@ -19,7 +19,7 @@ export default function Header() {
         {/* <Link href="/courses" passHref>
           <ListItem mx=".3rem">Courses</ListItem>
         </Link> */}
-        <Link href="/contact" passHref>
+        <Link href="/#contact" passHref>
           <ListItem mx=".3rem">Contact</ListItem>
         </Link>
       </List>

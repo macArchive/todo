@@ -10,7 +10,7 @@ import {
 
 export default function Contact() {
   return (
-    <>
+    <Stack as="section" id="contact">
       <Heading size="lg">Contact</Heading>
       <form>
         <Stack spacing={4} flexDirection="column" align="center" mb={6}>
@@ -31,6 +31,6 @@ export default function Contact() {
           </Button>
         </Stack>
       </form>
-    </>
+    </Stack>
   );
 }
