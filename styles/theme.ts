@@ -1,6 +1,6 @@
 import { extendTheme, ThemeConfig } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
-import { Button, Input, Text } from "./components";
+import { Button, Heading, Input, Text } from "./components";
 
 const config: ThemeConfig = {
   initialColorMode: "light",
@@ -68,6 +68,7 @@ export const theme = extendTheme({
     Button,
     Input,
     Text,
+    Heading,
   },
   config,
 });

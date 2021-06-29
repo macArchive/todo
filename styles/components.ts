@@ -28,3 +28,9 @@ export const Text = {
     textAlign: "left",
   },
 };
+
+export const Heading = {
+  baseStyle: {
+    alignSelf: "start",
+  },
+};
