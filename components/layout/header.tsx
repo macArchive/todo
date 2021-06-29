@@ -13,9 +13,6 @@ export default function Header() {
         <Image src="/logo.png" alt="Mac Hooper's Logo" w={10} />
       </Link>
       <List d="flex" align="center">
-        <Link href="/about" passHref>
-          <ListItem mx=".3rem">About</ListItem>
-        </Link>
         <Link href="/blog" passHref>
           <ListItem mx=".3rem">Blog</ListItem>
         </Link>

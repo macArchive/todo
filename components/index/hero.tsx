@@ -1,5 +1,5 @@
-import { Heading, Link, Text } from "@chakra-ui/layout";
-import NextLink from "next/link";
+import { Heading, Text } from "@chakra-ui/layout";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -11,14 +11,7 @@ export default function Hero() {
         techniques.
       </Text>
       <Text>
-        Why not read some of my blog posts by
-        <Link display={{ base: "none", sm: "inline" }} ml="4px">
-          <NextLink href="/blog">clicking here</NextLink>
-        </Link>
-        <Link display={{ base: "inline", sm: "none" }} ml="4px">
-          <NextLink href="/blog">tapping here</NextLink>
-        </Link>
-        .
+        Why not read some of my blog posts <Link href="/blog">here.</Link>
       </Text>
     </>
   );

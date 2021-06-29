@@ -9,13 +9,13 @@ export default function Work() {
       <Heading size="lg">Previous Work</Heading>
       <Stack>
         <Item
-          url="https://todo.net"
+          url="https://todo-macasmac.vercel.app/"
           icon={<FcTodoList fontSize="2.5rem" />}
           heading="Todo"
           text="A full stack todo application built with Next.js and Google Firebase."
         />
         <Item
-          url="https://jsplatform.machooper.github.io"
+          url="https://machooper.github.io/jsplatform/"
           icon={<IoLogoGameControllerA fontSize="2.5rem" />}
           heading="JSPlatform"
           text="A simple yet fun platform game built in Javascript using Phaser."
