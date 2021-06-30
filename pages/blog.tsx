@@ -5,6 +5,7 @@ import Cta from "@/comps/ui/cta";
 import Layout from "@/layout/index";
 import { getAllPosts } from "@/lib/api";
 import { Stack } from "@chakra-ui/react";
+import { AiFillYoutube } from "react-icons/ai";
 
 export default function Blog({ allPosts }) {
   return (
@@ -20,6 +21,7 @@ export default function Blog({ allPosts }) {
           heading="Interested in More Content?!"
           text="Check out my YouTube channel for more technology and programming content."
           button="Click Here"
+          leftIcon={<AiFillYoutube fontSize={24} />}
           url="https://www.youtube.com/channel/UCnTtBprmR4yTz3ieMSuWzlA"
         />
       </Stack>
