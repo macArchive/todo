@@ -40,7 +40,6 @@ export const theme = extendTheme({
       900: "#995900",
     },
   },
-
   styles: {
     global: {
       body: {
@@ -62,6 +61,12 @@ export const theme = extendTheme({
           cursor: "pointer",
         },
       },
+    },
+  },
+  textStyles: {
+    h2: {
+      fontSize: "36px",
+      fontWeight: "semibold",
     },
   },
   components: {

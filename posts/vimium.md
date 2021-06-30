@@ -1,7 +1,7 @@
 ---
 title: "The Best Browser Extension..."
 topics: "Technology"
-coverImage: "/blog/vimum/cover.jpg"
+coverImage: "/blog/vimum/cover.webp"
 date: "19.05.21"
 excerpt: "Now I know what you're thinking... there is no way a browser extension can be that good"
 ---

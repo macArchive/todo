@@ -1,14 +1,7 @@
 import { Button, Heading, Stack, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
-export default function Cta({
-  heading,
-  text,
-  button,
-  leftIcon,
-  rightIcon,
-  url,
-}) {
+export default function Cta({ heading, text, button, leftIcon, url }) {
   return (
     <Stack py={12} position="relative">
       <Stack
@@ -43,7 +36,7 @@ export default function Cta({
         <Heading>{heading}</Heading>
         <Text textAlign="center">{text}</Text>
         <Link href={url} passHref>
-          <Button variant="solid" leftIcon={leftIcon} rightIcon={rightIcon}>
+          <Button variant="solid" leftIcon={leftIcon}>
             {button}
           </Button>
         </Link>
