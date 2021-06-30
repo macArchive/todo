@@ -4,8 +4,9 @@ import Link from "next/link";
 export default function Item({ url, icon, heading, text }) {
   return (
     <Link href={url} passHref>
-      <a target="_blank" style={{color: 'inherit'}}>
+      <a target="_blank" style={{ color: "inherit" }}>
         <Stack
+          maxW="400px"
           direction="row"
           justify="space-around"
           align="center"
@@ -14,6 +15,7 @@ export default function Item({ url, icon, heading, text }) {
           borderColor="gray.200"
           shadow="md"
           p=".5rem"
+          mx="auto"
         >
           {icon}
           <Stack w="80%">

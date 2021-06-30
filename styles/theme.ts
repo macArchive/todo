@@ -53,7 +53,6 @@ export const theme = extendTheme({
         color: mode("black", "white"),
         bg: mode("white", "black"),
         mx: "auto",
-        scrollBehavior: 'smooth'
       },
       a: {
         color: "primary.500",

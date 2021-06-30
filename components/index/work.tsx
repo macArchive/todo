@@ -1,17 +1,17 @@
 import { Heading, Stack } from "@chakra-ui/react";
-import { FcTodoList } from "react-icons/fc";
 import { GiSandSnake } from "react-icons/gi";
 import { IoLogoGameControllerA } from "react-icons/io";
+import { RiTodoFill } from "react-icons/ri";
 import Item from "./item";
 
 export default function Work() {
   return (
-    <>
+    <Stack spacing={3}>
       <Heading size="lg">Previous Work</Heading>
       <Stack>
         <Item
           url="https://todo-macasmac.vercel.app/"
-          icon={<FcTodoList fontSize="2.5rem" />}
+          icon={<RiTodoFill fontSize="2rem" />}
           heading="Todo"
           text="A full stack todo application built with Next.js and Google Firebase."
         />
@@ -28,6 +28,6 @@ export default function Work() {
           text="A business page for a record label, with a CMS for content editing."
         />
       </Stack>
-    </>
+    </Stack>
   );
 }

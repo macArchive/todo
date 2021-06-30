@@ -9,7 +9,7 @@ export default function Home() {
       title="Home"
       description="A Freelance Web Developer building fast, responsive and beautiful websites making use of cutting edge technology and perfect SEO techniques."
     >
-      <Stack spacing={6}>
+      <Stack spacing={8}>
         <Hero />
         <Work />
         <Contact />
