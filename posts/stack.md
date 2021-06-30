@@ -1,9 +1,9 @@
 ---
-title: "A Look at My Stack, Tools and Software"
-topics: "Web Development"
+title: A Look at My Stack
+topics: "Technology"
 coverImage: "/blog/stack/cover.jpg"
 date: "17.05.21"
-excerpt: 'I'm going to keep this post to a simple list rather than detailing each choice. I might make a video in the future that details my choices.'
+excerpt: "I'm going to keep this post to a simple list rather than detailing each choice. I might make a video in the future that details my choices."
 ---
 
 I'm going to keep this post to a simple list rather than detailing each choice. I might make a video in the future that details my choices.

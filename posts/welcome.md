@@ -1,8 +1,8 @@
 ---
-title: A New Site, A New Blog
+title: A New Site, a New Blog
 topics: "General"
 coverImage: "/blog/welcome/cover.jpg"
-date: "19.05.21"
+date: "15.05.21"
 excerpt: "I have enjoyed developing websites over the past year but realised that my site had gotten a little dated in comparison to my skills, so I built this new one! Using Preact, Next.JS and Markdown."
 ---
 

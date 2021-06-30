@@ -1,5 +1,6 @@
 import { Heading, Stack } from "@chakra-ui/react";
 import { FcTodoList } from "react-icons/fc";
+import { GiSandSnake } from "react-icons/gi";
 import { IoLogoGameControllerA } from "react-icons/io";
 import Item from "./item";
 
@@ -19,6 +20,12 @@ export default function Work() {
           icon={<IoLogoGameControllerA fontSize="2.5rem" />}
           heading="JSPlatform"
           text="A simple yet fun platform game built in Javascript using Phaser."
+        />
+        <Item
+          url="https://starserpentrecords.com"
+          icon={<GiSandSnake fontSize="2.5rem" />}
+          heading="Star Serpent Records"
+          text="A business page for a record label, with a CMS for content editing."
         />
       </Stack>
     </>
