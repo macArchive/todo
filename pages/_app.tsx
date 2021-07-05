@@ -2,9 +2,8 @@ import { theme } from "@/styles/theme";
 import {
   ChakraProvider,
   cookieStorageManager,
-  localStorageManager,
+  localStorageManager
 } from "@chakra-ui/react";
-import "@fontsource/roboto/400.css";
 
 export const siteTitle = "Mac Hooper";
 
