@@ -1,29 +1,29 @@
-import { theme } from "@/styles/theme";
+import { theme } from '@/styles/theme'
 import {
   ChakraProvider,
   cookieStorageManager,
   localStorageManager
-} from "@chakra-ui/react";
+} from '@chakra-ui/react'
 
-export const siteTitle = "Mac Hooper";
+export const siteTitle = 'Mac Hooper'
 
 export default function MyApp({ Component, pageProps, cookies }) {
   const colorModeManager =
-    typeof cookies === "string"
+    typeof cookies === 'string'
       ? cookieStorageManager(cookies)
-      : localStorageManager;
+      : localStorageManager
 
   return (
     <ChakraProvider theme={theme} colorModeManager={colorModeManager}>
       <Component {...pageProps} />
     </ChakraProvider>
-  );
+  )
 }
 
 export async function getServerSideProps({ req }) {
   return {
     props: {
-      cookies: req.headers.cookie ?? "",
-    },
-  };
+      cookies: req.headers.cookie ?? ''
+    }
+  }
 }
