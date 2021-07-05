@@ -1,4 +1,4 @@
-import { firebaseClient } from '@/lib/firebaseClient'
+import { firebase } from '@/lib/firebase'
 import {
   Button,
   chakra,
@@ -18,12 +18,12 @@ export default function Form({ signin, onClose }) {
   const router = useRouter()
   async function signUp(e) {
     e.preventDefault()
-    await firebaseClient.auth().createUserWithEmailAndPassword(email, pass)
+    await firebase.auth().createUserWithEmailAndPassword(email, pass)
     router.push('/')
   }
   async function signIn(e) {
     e.preventDefault()
-    await firebaseClient.auth().signInWithEmailAndPassword(email, pass)
+    await firebase.auth().signInWithEmailAndPassword(email, pass)
     router.push('/')
     onClose()
   }
@@ -38,7 +38,7 @@ export default function Form({ signin, onClose }) {
         isClosable: true
       })
     } else {
-      await firebaseClient.auth().sendPasswordResetEmail(email)
+      await firebase.auth().sendPasswordResetEmail(email)
       toast({
         title: 'Reset email sent.',
         description: 'Keep an eye on your inbox.',
