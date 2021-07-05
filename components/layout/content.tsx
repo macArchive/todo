@@ -1,21 +1,18 @@
-import { Stack } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 
-interface ContentProps {
-  children: any
-}
-
-export default function Content({ children }: ContentProps) {
+export default function Content({ children }) {
   return (
-    <Stack as='main' minH='100vh' direction='column' align='center'>
-      <Stack
+    <Flex minH='100vh' direction='column' align='center'>
+      <Flex
         maxW={{ sm: 'auto', md: 960, xl: '80vw' }}
         direction='column'
         align='center'
         grow={1}
         shrink={0}
-        basis='auto'>
+        basis='auto'
+        margin={{ sm: 'auto', md: '0 auto' }}>
         {children}
-      </Stack>
-    </Stack>
+      </Flex>
+    </Flex>
   )
 }

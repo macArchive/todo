@@ -1,7 +1,7 @@
 {
-  "name": "start",
-  "version": "0.3.0",
-  "description": "A starter application to hit the ground running with.",
+  "name": "todo",
+  "version": "0.2.0",
+  "description": "A minimal todo application.",
   "author": {
     "name": "Mac",
     "email": "mac.develops@icloud.com",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/machooper/start"
+    "url": "git+https://github.com/machooper/todo"
   },
   "keywords": [
     "next",
