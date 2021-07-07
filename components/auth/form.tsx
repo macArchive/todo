@@ -1,4 +1,3 @@
-import { firebase } from '@/lib/firebase'
 import {
   Button,
   chakra,
@@ -18,12 +17,12 @@ export default function Form({ signin, onClose }) {
   const router = useRouter()
   async function signUp(e) {
     e.preventDefault()
-    await firebase.auth().createUserWithEmailAndPassword(email, pass)
+    // signUp logic here
     router.push('/')
   }
   async function signIn(e) {
     e.preventDefault()
-    await firebase.auth().signInWithEmailAndPassword(email, pass)
+    // signIn logic here
     router.push('/')
     onClose()
   }
@@ -38,7 +37,7 @@ export default function Form({ signin, onClose }) {
         isClosable: true
       })
     } else {
-      await firebase.auth().sendPasswordResetEmail(email)
+      // passwordReset logic here
       toast({
         title: 'Reset email sent.',
         description: 'Keep an eye on your inbox.',

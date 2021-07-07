@@ -5,7 +5,7 @@ import {
   localStorageManager
 } from '@chakra-ui/react'
 
-export const siteTitle = 'Mac Hooper'
+export const siteTitle = 'Todo'
 
 export default function MyApp({ Component, pageProps, cookies }) {
   const colorModeManager =

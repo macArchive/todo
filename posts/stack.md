@@ -14,7 +14,7 @@ I'm going to keep this post to a simple list rather than detailing each choice. 
 - Markdown
 - Github
 - Vercel
-- Firebase
+
 
 ## Other Technologies I Work With
 
