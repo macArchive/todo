@@ -1,0 +1,10 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "GraphQL Server for Application",
+  "main": "index.js",
+  "repository": "https://github.com/machooper/todo",
+  "author": "mac",
+  "license": "MIT",
+  "private": true
+}
