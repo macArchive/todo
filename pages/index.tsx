@@ -1,10 +1,9 @@
-import nookies from 'nookies'
-import { firebaseAdmin } from '@/lib/firebaseAdmin'
-
-import Layout from '@/layout/index'
-import Hero from '@/comps/index/hero'
+import Cta from '@/comps/general/cta'
 import Features from '@/comps/index/features'
-import Cta from '@/comps/contact/cta'
+import Hero from '@/comps/index/hero'
+import Layout from '@/layout/index'
+import { admin } from '@/lib/firebase'
+import nookies from 'nookies'
 
 export default function Home() {
   return (
@@ -19,7 +18,7 @@ export default function Home() {
 export async function getServerSideProps(ctx) {
   try {
     const cookies = nookies.get(ctx)
-    const token = await firebaseAdmin.auth().verifyIdToken(cookies.token)
+    const token = await admin.auth().verifyIdToken(cookies.token)
 
     const { uid, email } = token
     const user = { uid, email }

@@ -1,3 +1,4 @@
+import { useDisclosure } from '@chakra-ui/react'
 import Content from './content'
 import Footer from './footer'
 import Head from './head'
@@ -10,6 +11,8 @@ interface LayoutProps {
 }
 
 export default function Layout({ title, description, children }: LayoutProps) {
+  const { onOpen } = useDisclosure()
+
   return (
     <>
       <Head
@@ -24,7 +27,7 @@ export default function Layout({ title, description, children }: LayoutProps) {
         siteUrl='https://.com'
         themeColor='#0099ff'
       />
-      <Header />
+      <Header onOpen={onOpen} />
       <Content>{children}</Content>
       <Footer />
     </>

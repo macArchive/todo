@@ -1,4 +1,4 @@
-import admin from 'firebase-admin'
+import * as admin from 'firebase-admin'
 import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/firestore'
@@ -15,14 +15,11 @@ if (typeof window !== 'undefined' && !firebase.apps.length) {
   firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
 }
 
+const serviceAccount = require('./serviceAccountKey.json')
 if (!admin.apps.length) {
   admin.initializeApp({
-    credential: admin.credential.cert({
-      privateKey: process.env.private_key,
-      clientEmail: process.env.client_email,
-      projectId: process.env.project_id
-    }),
-    databaseURL: 'https://todo-e4cd0.firebaseio.com'
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: process.env.FIREBASE_DB_URL
   })
 }
 
