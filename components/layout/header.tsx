@@ -1,12 +1,14 @@
 import Account from '@/comps/user/account'
-import { useAuth } from '@/lib/auth'
 import { Button, ButtonGroup, HStack } from '@chakra-ui/react'
 import Link from 'next/link'
 import Logo from './logo'
 
 export default function Header({ onOpen }) {
-  const token = useAuth()
-  const user = token.user
+  const user = {
+    uid: 1,
+    photoUrl: '111',
+    email: '11111'
+  }
   return (
     <HStack
       as='header'

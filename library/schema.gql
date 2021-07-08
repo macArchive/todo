@@ -1,0 +1,14 @@
+type User {
+  id: ID!
+  user: String
+  name: String
+  email: String
+  tasks: [Task]
+}
+
+type Task {
+  id: ID!
+  text: String
+  complete: Boolean
+  user: User
+}

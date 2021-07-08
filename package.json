@@ -28,16 +28,13 @@
     "test": "yarn prettier && yarn lint"
   },
   "dependencies": {
-    "@prisma/client": "^2.26.0",
-    "apollo-server-micro": "^2.25.2",
-    "graphql": "^15.5.1",
     "next": "^11.0.1-canary.5",
-    "pg": "^8.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@chakra-ui/icons": "^1.0.13",
+    "graphql": "^15.5.1",
     "@chakra-ui/react": "^1.6.4",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
