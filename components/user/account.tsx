@@ -1,3 +1,4 @@
+import { firebase } from '@/lib/firebase'
 import {
   Avatar,
   List,
@@ -24,7 +25,15 @@ export default function Account({ img, email }) {
         <PopoverBody cursor='pointer'>
           <List>
             <ListItem>
-              <a>Sign out</a>
+              <a
+                onClick={async () => {
+                  await firebase
+                    .auth()
+                    .signOut()
+                    .then(() => router.push('/'))
+                }}>
+                Sign out
+              </a>
             </ListItem>
           </List>
         </PopoverBody>
